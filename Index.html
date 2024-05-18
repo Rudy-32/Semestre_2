@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculateur de Moyenne Semestrielle</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 p-10">
+    <div class="container mx-auto">
+        <h1 class="text-2xl font-bold mb-5">Calculateur de Moyenne Semestrielle</h1>
+        <table class="table-auto w-full bg-white shadow-md rounded-lg overflow-hidden">
+            <thead>
+                <tr>
+                    <th class="px-4 py-2 border">Module</th>
+                    <th class="px-4 py-2 border">Matière</th>
+                    <th class="px-4 py-2 border">DS</th>
+                    <th class="px-4 py-2 border">Examen</th>
+                    <th class="px-4 py-2 border">Moyenne</th>
+                    <th class="px-4 py-2 border">Moyenne du Module</th>
+                    <th class="px-4 py-2 border">Crédits Acquis</th>
+                </tr>
+            </thead>
+            <tbody id="modules-container">
+                <!-- Module rows will be added here by JavaScript -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5" class="px-4 py-2 border text-right font-bold">Moyenne Finale</td>
+                    <td class="px-4 py-2 border" id="final-average">-</td>
+                    <td class="px-4 py-2 border" id="total-credits">-</td>
+                </tr>
+            </tfoot>
+        </table>
+    <script src="calculator.js"></script>
+</body>
+</html>
